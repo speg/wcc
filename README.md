@@ -1,0 +1,4 @@
+wcc
+===
+
+simple tool
