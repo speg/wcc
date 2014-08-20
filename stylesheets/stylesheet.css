@@ -487,3 +487,30 @@ footer a:hover {
 #mc_embed_signup {
   margin-top: 20px;
 }
+
+#equation {
+  background-color: rgba(0,0,0,0.6);
+/*   height: 70px; */
+  width: 150%;
+  border-radius: 6px;
+  position: relative;
+  left: -100%;
+  box-shadow: 3px 5px 10px;
+  text-align: center;
+  padding: 5%;
+  
+  color: white;
+}
+
+#equation>input {
+  opacity: 1.0;
+  background-color: rgba(255,255,255, 1.0);
+  width: 95%;
+  border-radius: 6px;
+  border: 0;
+  padding: 3px;
+}
+
+.hidden {
+  display: none !important;
+}
