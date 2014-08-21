@@ -6,8 +6,6 @@
 	A = inputs[0], B = inputs[2],
 	equation = "a * a",
 	offClick = function(e) {
-		//click off a window
-		console.log(e);
 		if ("INPUT" === e.target.nodeName && e.target.parentNode.id === "equation" || e.target.id === "equation"){
 			//ignore
 		} else {
