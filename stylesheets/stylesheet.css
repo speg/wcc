@@ -15,35 +15,35 @@ article, aside, canvas, details, embed,
 figure, figcaption, footer, header, hgroup,
 menu, nav, output, ruby, section, summary,
 time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
 }
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
-	display: block;
+  display: block;
 }
 body {
-	line-height: 1;
+  line-height: 1;
 }
 ol, ul {
-	list-style: none;
+  list-style: none;
 }
 blockquote, q {
-	quotes: none;
+  quotes: none;
 }
 blockquote:before, blockquote:after,
 q:before, q:after {
-	content: '';
-	content: none;
+  content: '';
+  content: none;
 }
 table {
-	border-collapse: collapse;
-	border-spacing: 0;
+  border-collapse: collapse;
+  border-spacing: 0;
 }
 
 /* LAYOUT STYLES */
@@ -471,7 +471,7 @@ footer a:hover {
 @media only screen and (min-width: 480px) and (max-width: 767px) {}
 
 /* Mobile Portrait Size to Mobile Landscape Size (devices and browsers) */
-@media only screen and (max-width: 479px) {}
+
 
 
 #mc-embedded-subscribe {
@@ -490,15 +490,14 @@ footer a:hover {
 
 #equation {
   background-color: rgba(0,0,0,0.6);
-/*   height: 70px; */
   width: 150%;
-  border-radius: 6px;
-  position: relative;
+  border-radius: 12px;
+  position: absolute;
+  top: 30px;
   left: -100%;
   box-shadow: 3px 5px 10px;
   text-align: center;
   padding: 5%;
-
   color: white;
 }
 
@@ -509,9 +508,30 @@ footer a:hover {
   border-radius: 6px;
   border: 0;
   padding: 3px;
-	font-size: 1rem;
+  font-size: 1rem;
 }
 
 .hidden {
   display: none !important;
+}
+
+#demo {
+  position: relative;
+}
+
+#demo input {
+    line-height: 1.4rem;
+    font-size: 1.2rem;
+       
+}
+
+@media only screen and (max-width: 479px) {
+  
+  #equation {
+  width: 70%; 
+  top: 30px;
+  left: 0;
+  padding: 5%;
+}
+  
 }
