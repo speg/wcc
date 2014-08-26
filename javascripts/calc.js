@@ -20,9 +20,11 @@
 	A.addEventListener('keyup', function(e){
 		var a = parseInt(A.value, 10);
 		B.value = isNaN(a) ? '' : eval(equation);
+		mixpanel.track("input keyup");
 	});
 
 	B.addEventListener('click', function(e){
+		mixpanel.track("output click");
 		var eq = document.getElementById('equation');
 			eq.classList.remove('hidden');
 		setTimeout(function(){
