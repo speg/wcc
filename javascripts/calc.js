@@ -50,5 +50,7 @@
 			offClick(e);
 		}
 	});
-
+	document.getElementById('mc-embedded-subscribe').addEventListener('click', function(){
+		ga('send', 'event', 'meta', 'gaveEmail');
+	});
 }());
